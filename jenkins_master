@@ -11,7 +11,7 @@ pipeline {
 
         stage('Tigger the Slave Jobs') {
             steps {
-                echo 'hook'
+                echo 'Wowwwww'
                 build job: 'Slaves', parameters: [string(name: 'NAME', value: 'Boom'), string(name: 'Ages', value: '21')]
             }
         }
