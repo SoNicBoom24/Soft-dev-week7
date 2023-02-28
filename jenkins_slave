@@ -1,1 +1,12 @@
-# your Home work
+pipeline {
+    agent any
+
+    stages {
+        
+        stage('Welcome to slave'){
+            steps{
+                echo 'slave'
+            }
+        }
+    }
+}
