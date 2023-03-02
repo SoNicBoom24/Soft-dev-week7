@@ -5,7 +5,7 @@ pipeline {
         
         stage('Welcome to slave'){
             steps{
-                sh ("python myscript.py ${params.NAME} --age ${params.Ages}")
+                sh ("python myscript.py ${params.name} --age ${params.ages}")
             }
         }
     }
