@@ -18,7 +18,7 @@ pipeline {
                     env.ages = lines[1]
                 }
                 echo 'Start Trigger to send data to slave'
-                build job: 'Slaves', parameters: [string(name: 'NAME', value: "$name"), string(name: 'Ages', value: "$ages")]
+                build job: 'Slaves', parameters: [string(name: 'name', value: "$name"), string(name: 'ages', value: "$ages")]
             }
         }
     }
