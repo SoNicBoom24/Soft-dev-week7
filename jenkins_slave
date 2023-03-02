@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        
-        stage('Welcome to slave'){
-            steps{
-                sh ("python myscript.py ${params.name} --age ${params.ages}")
+        stage('Example') {
+            steps {
+                sh ("python myscript.py ${params.NAME} --age ${params.Ages}")
             }
         }
     }
